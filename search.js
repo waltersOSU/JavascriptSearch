@@ -16,3 +16,14 @@ function searchFunction(){
       }
     }
  }
+
+ function addToTheList(){
+     var entry = document.getElementById('newListItem').value;
+     var node = document.createElement('li');
+     var aNode = document.createElement('a');
+     aNode.href = "#";
+     node.appendChild(aNode);
+     aNode.innerText = entry;
+     document.getElementById("itemList").appendChild(node);
+     document.getElementById('newListItem').value = '';
+ }
